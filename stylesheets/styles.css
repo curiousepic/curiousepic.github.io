@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
-
 .shadow {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -36,9 +35,12 @@
 }
 
 hr {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   height: 8px;
   border: 0;
-  box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+  box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.35);
 }
 
 .videoWrapper {
@@ -163,8 +165,10 @@ img {
 
 header {
   width:270px;
+  height:800px;
   float:left;
   position:fixed;
+  overflow: auto;
 }
 
 header ul {
