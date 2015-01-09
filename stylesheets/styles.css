@@ -2,12 +2,18 @@
 
 
 .shadow {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   -webkit-box-shadow: 2px 2px 2px 2px #E4E4E4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    2px 2px 2px 2px #E4E4E4;  /* Firefox 3.5 - 3.6 */
   box-shadow:         2px 2px 2px 2px #E4E4E4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 .section-shadow {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   -webkit-box-shadow: 3px 3px 4px 5px #D4D4D4;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    3px 3px 4px 5px #D4D4D4;  /* Firefox 3.5 - 3.6 */
   box-shadow:         3px 3px 4px 5px #D4D4D4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
