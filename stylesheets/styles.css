@@ -7,6 +7,13 @@
   box-shadow:         3px 3px 4px 5px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(https://media.licdn.com/mpr/mpr/shrink_200_200/p/1/005/054/357/2030735.jpg) no-repeat;}
 
 .project {
   line-height:0.08;
@@ -105,6 +112,7 @@ th {
 
 img {
   max-width:100%;
+
 }
 
 header {
@@ -172,7 +180,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:600px;
   float:right;
   padding-bottom:50px;
 }
