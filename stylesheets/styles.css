@@ -2,6 +2,12 @@
 
 
 .shadow {
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    2px 2px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.section-shadow {
   -webkit-box-shadow: 3px 3px 4px 5px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    3px 3px 4px 5px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         3px 3px 4px 5px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -182,7 +188,9 @@ header ul a strong {
 section {
   width:600px;
   float:right;
+  padding:16px;
   padding-bottom:50px;
+  background-color:#f6f6f6;
 }
 
 small {
@@ -197,10 +205,10 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:200px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:10px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -223,7 +231,7 @@ footer {
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
+    padding:16px;
     margin:0 0 20px;
   }
 
