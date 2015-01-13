@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+/*::-webkit-scrollbar {*/
+  /*display: none;*/
+/*}*/
+
 .shadow {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -60,115 +64,15 @@ hr {
   box-shadow:         2px 2px 2px 2px #E4E4E4;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+img {
+  max-width:100%;
+}
+
 body {
   padding:20px;
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#6C6C6C;
   font-weight:300;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color:#222;
-  margin:0 0 20px;
-}
-
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height:1.1;
-}
-
-h1 {
-  font-size:28px;
-}
-
-h2 {
-  color:#494949;
-  font-size:25px;
-}
-
-
-h3 {
-  color:#494949;
-  font-size:22px;
-}
-
-h4, h5, h6 {
-  color:#494949;
-}
-
-a {
-  color:#39c;
-  font-weight:400;
-  text-decoration:none;
-}
-
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
-}
-
-.wrapper {
-  width:860px;
-  margin:0 auto;
-}
-
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
-}
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
-dt {
-  color:#444;
-  font-weight:700;
-}
-
-th {
-  color:#444;
-}
-
-img {
-  max-width:100%;
-
-}
-
-header {
-  width:270px;
-  height:800px;
-  float:left;
-  position:fixed;
-  overflow: auto;
 }
 
 header ul {
@@ -208,11 +112,6 @@ header ul a {
   height:40px;
 }
 
-strong {
-  color:#222;
-  font-weight:700;
-}
-
 header ul li + li {
   width:88px;
   border-left:1px solid #fff;
@@ -229,50 +128,75 @@ header ul a strong {
   color:#222;
 }
 
-section {
-  width:600px;
-  float:right;
-  padding:16px;
-  padding-bottom:50px;
-  background-color:#f6f6f6;
-}
-
-small {
-  font-size:12px;
-}
-
-
 footer {
-
   float:none;
   position:static;
   width:auto;
 }
 
 
+
+.wrapper {
+  width:1200px;
+  margin:0 auto;
+}
+
+header {
+  width:20%;
+  /*height:800px;*/
+  float:left;
+  position:fixed;
+  /*overflow: scroll;*/
+}
+
+section {
+  width:75%;
+  float:right;
+  padding:16px;
+  padding-bottom:50px;
+  background-color:#f6f6f6;
+}
+
+
+@media print, screen and (max-width: 1500px) {
+  .wrapper {
+    width: auto;
+    margin:0 3% auto;
+  }
+  section {
+    width: 75%;
+  }
+}
+@media print, screen and (max-width: 1200px) {
+
+  section {
+    width: 70%;
+  }
+}
+
 @media print, screen and (max-width: 960px)  {
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
+  /*div.wrapper {*/
+    /*width:auto;*/
+    /*margin:0;*/
+  /*}*/
 
   header, section, footer {
     float:none;
     position:static;
     width:auto;
+    margin: 0 auto;
   }
 
-  header {
-    padding-right:320px;
-  }
+  /*header {*/
+    /*padding-right:320px;*/
+  /*}*/
 
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:16px;
-    margin:0 0 20px;
+    /*margin:0 0 20px;*/
   }
 
   header a small {
@@ -320,4 +244,99 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  color:#494949;
+  font-size:25px;
+}
+
+h3 {
+  color:#494949;
+  font-size:22px;
+}
+
+h4, h5, h6 {
+  color:#494949;
+}
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
+}
+
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color:#333;
+  font-size:12px;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
+}
+
+strong {
+  color:#222;
+  font-weight:700;
+}
+
+small {
+  font-size:12px;
 }
